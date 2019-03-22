@@ -74,7 +74,8 @@
     {{ $jquerySlimJS := resources.Get "js/jquery-3.3.1.slim.min.js" }}
     {{ $popperJS := resources.Get "js/popper-1.14.7.min.js" }}
     {{ $bootstrapJS := resources.Get "js/bootstrap-4.3.1.min.js" }}
-    {{ $bundleJS := slice $jquerySlimJS $popperJS $bootstrapJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $mainJS := resources.Get "js/main.js" }}
+    {{ $bundleJS := slice $jquerySlimJS $popperJS $bootstrapJS $mainJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script
       src="{{ $bundleJS.Permalink }}"
       integrity="{{ $bundleJS.Data.Integrity }}"

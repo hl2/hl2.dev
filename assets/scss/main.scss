@@ -1,13 +1,19 @@
 @import "bootstrap/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 
-:root {
-  --navbar-height: 56px;
-  --main-background-color: #093c76;
+@include media-breakpoint-down(sm) {
+  html {
+    font-size: 0.9rem;
+  }
 }
 
 .article {
-  font-family: 'Playfair Display', serif !important;
+  font-family: "Playfair Display", serif !important;
+
+  .cover-img {
+    height: 300px;
+    overflow: hidden;
+  }
 }
 
 footer {

@@ -3,11 +3,7 @@
   <h1>{{ .Title }}</h1>
   <p class="lead">{{ .Description }}</p>
 
-  <ul class="list-unstyled">
-    {{ range .Pages }}
-      {{ partial "blog-post-item" . }}
-    {{ end }}
-  </ul>
+  {{ partial "blog-post-list" .Pages }}
 </div>
 
 {{ end }}

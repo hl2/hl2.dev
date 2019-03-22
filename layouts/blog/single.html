@@ -4,13 +4,16 @@
     <div class="col-12">
       <h1>{{ .Title }}</h1>
 
-      <div class="row mt-4 align-items-center justify-content-center">
-        <div class="col-1">
+      <div class="d-flex align-items-center mt-4">
+        <div class="mr-3">
           {{ $author := .Params.Author }}
-          <img class="img-fluid border rounded-circle"
-          src="https://www.gravatar.com/avatar/{{ md5 (index $.Site.Data.authors $author).email }}?s=120">
+          <img
+            class="border rounded-circle"
+            width="70"
+            src="https://www.gravatar.com/avatar/{{ md5 (index $.Site.Data.authors $author).email }}?s=100"
+          />
         </div>
-        <div class="col-11 pl-0">
+        <div>
           {{ .Date.Format "January 02, 2006" }} <br />
           ☕ {{ .ReadingTime }} min read
         </div>
@@ -18,9 +21,9 @@
     </div>
 
     <div class="col-12 mt-4">
-      <div style="height: 300px; overflow: hidden;">
-        {{ with .Resources.GetMatch "images/full.jpg" }}
-          <img class="img-fluid" src="{{ .Permalink }}" />
+      <div class="cover-img">
+        {{ with .Resources.GetMatch "images/cover.jpg" }}
+          <img class="fluid" src="{{ .Permalink }}" />
         {{ end }}
       </div>
     </div>

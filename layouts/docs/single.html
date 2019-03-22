@@ -1,23 +1,25 @@
 {{ define "main" }}
 <div class="container my-5">
   <div class="row">
-    <div class="col-3 mr-3">
-      {{ partial "docs-menu" . }}
+    <div class="col-3 d-none d-lg-block mr-3">
+      {{ partial "doc-menu" . }}
     </div>
 
-    <div class="col-8">
-      <div class="row">
-        <div class="col">
-          <div class="row">
-            <div class="col">
-              <h1>{{ .Title }}</h1>
-              <p class="lead">{{ .Description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
+    <div class="col-12 d-block d-lg-none mb-5">
+      <select id="navigation" class="custom-select">
+        <option value="{{ if .IsSection }}{{ .Permalink }}{{ else }}{{ .Parent.Permalink }}{{ end }}" selected>Overview</option>
+        {{ range.Parent.Pages }}
+        <option value="{{ .Permalink }}" {{ if eq .Title $.Title }}selected{{ end }}>{{ .Title }}</option>
+        {{ end }}
+      </select>
+    </div>
+
+    <div class="col-12 col-lg-8">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Description }}</p>
+      <hr />
+      <div class="row mt-5">
+        <div class="col-12">
           {{ .Content }}
         </div>
       </div>

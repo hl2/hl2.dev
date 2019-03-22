@@ -3,20 +3,6 @@
   <h1>{{ .Title }}</h1>
   <p class="lead">{{ .Description }}</p>
 
-  <div class="row">
-    {{ range.Sections }}
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">{{ .Title }}</h5>
-          <p class="card-text">{{ .Description }}</p>
-          <a href="{{ .Permalink }}"
-            >Learn More <i class="fas fa-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-    {{ end }}
-  </div>
+  {{ partial "doc-list" .Sections }}
 </div>
 {{ end }}
