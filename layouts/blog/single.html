@@ -10,7 +10,7 @@
         <img
           class="border rounded-circle mr-3"
           width="70"
-          src="https://www.gravatar.com/avatar/{{ md5 (index $.Site.Data.authors $author).email }}?s=100"
+          src="/images/avatars/{{ (index $.Site.Data.authors $author).imageName }}"
         />
         <div class="media-body align-self-center">
           <h5 class="my-0">{{ .Date.Format "January 02, 2006" }}</h5>
