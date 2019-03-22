@@ -1,0 +1,25 @@
+<div class="nav flex-column nav-pills">
+  <a
+    href="{{ if .IsSection }}{{ .Permalink }}{{ else }}{{ .Parent.Permalink }}{{ end }}"
+    class="nav-link {{ if .IsSection }}active{{ end }}"
+    >Overview</a
+  >
+
+  {{ if .IsSection }}
+  {{ range sort .Pages }}
+  <a
+    href="{{ .Permalink }}"
+    class="nav-link {{ if eq .Title $.Title }}active{{ end }}"
+    >{{ .Title }}</a
+  >
+  {{ end }}
+  {{ else }}
+  {{ range sort .Parent.Pages }}
+  <a
+    href="{{ .Permalink }}"
+    class="nav-link {{ if eq .Title $.Title }}active{{ end }}"
+    >{{ .Title }}</a
+  >
+  {{ end }}
+  {{ end }}
+</div>

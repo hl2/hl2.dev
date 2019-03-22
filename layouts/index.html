@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="jumbotron bg-light container-fluid border-bottom rounded-0 mb-0">
+  <div class="container">
+    <h1 class="display-4">Build amazing IoT projects with hl2 technologies</h1>
+    <a class="btn btn-primary btn-lg my-4" href="/docs" role="button"
+      >Getting Started <i class="fas fa-arrow-right"></i
+    ></a>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2 class="font-weight-light">
+    Simplify the development and integration of IoT LPWAN devices with our
+    end-to-end technologies! The available documentation is listed below.
+  </h2>
+
+  <div class="row mt-5">
+    <!-- TODO better ??? -->
+    {{ range (where .Site.Sections "Type" "_default") }}
+    {{ range.Sections }}
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{ .Title }}</h5>
+          <p class="card-text">
+            {{ .Description }}
+          </p>
+          <a href="{{ .Permalink }}"
+            >Learn More <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+{{ $blogPosts := (where .Site.RegularPages "Section" "blog") }}
+{{ if gt (len $blogPosts) 0 }}
+<div class="container my-5">
+  <h2 class="font-weight-light">Recent Posts</h2>
+
+  <ul class="list-unstyled mt-5">
+    {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    {{ partial "blog-post-item" . }}
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ end }}

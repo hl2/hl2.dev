@@ -1,0 +1,19 @@
+{{ $author := .Params.Author }}
+<li class="d-flex rounded border shadow-sm mb-2 p-2">
+  <a href="{{ .Permalink }}">
+    <div class="mr-3">
+      {{ with .Resources.GetMatch "images/thumbnail.jpg" }}
+        <img class="img-fluid rounded" src="{{ .Permalink }}" />
+      {{ end }}
+    </div>
+    <div style="align-self: center">
+      <a class="h4" href="{{ .Permalink }}">{{ .Title }}</a>
+      <div class="mt-3 text-muted">
+        {{ (index .Site.Data.authors $author).fullName }}
+        <br />
+        {{ .Date.Format "January 02, 2006" }} &middot; ☕ {{ .ReadingTime }} min
+        read
+      </div>
+    </div>
+  </a>
+</li>

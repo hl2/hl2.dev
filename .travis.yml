@@ -1,0 +1,8 @@
+language: bash
+before_install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+script:
+  - hugo
+notifications:
+  email: false

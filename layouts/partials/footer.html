@@ -1,0 +1,55 @@
+<footer class="border-top text-white">
+  <div class="container">
+    <div class="row align-items-center py-5">
+      <div class="col-12 text-center col-lg-6 text-lg-left">
+        <p class="font-weight-light mb-0">👋 Never miss a technical update, subscribe to our newsletter!</p>
+      </div>
+      <div class="col-12 mt-3 col-lg-6 mt-lg-0">
+        <form
+          method="POST"
+          action="https://hl2.us15.list-manage.com/subscribe/post?u=d8c14c653ba33a8dedcc09d9f&amp;id=c1d80cd278"
+        >
+          <div class="input-group">
+            <input
+              name="EMAIL"
+              type="email"
+              class="form-control"
+              placeholder="your@email.com"
+            />
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row align-items-center py-4">
+      <div class="col-4 text-muted">&copy; {{ now.Format "2006"}} hl2</div>
+
+      <div class="col-4 text-muted text-center">
+        Made with <i class="fas fa-heart"></i> by hl2
+      </div>
+
+      <div class="col-4 text-right">
+        <ul class="list-unstyled list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="text-muted" href="{{ .Site.Params.TwitterProfileURL }}"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-muted" href="{{ .Site.Params.LinkedInProfileURL }}"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a class=" text-muted" href="{{ .Site.Params.GitHubProfileURL }}"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

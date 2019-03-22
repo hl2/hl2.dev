@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="article container my-5">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ .Title }}</h1>
+
+      <div class="row mt-4 align-items-center justify-content-center">
+        <div class="col-1">
+          {{ $author := .Params.Author }}
+          <img class="img-fluid border rounded-circle"
+          src="https://www.gravatar.com/avatar/{{ md5 (index $.Site.Data.authors $author).email }}?s=120">
+        </div>
+        <div class="col-11 pl-0">
+          {{ .Date.Format "January 02, 2006" }} <br />
+          ☕ {{ .ReadingTime }} min read
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-4">
+      <div style="height: 300px; overflow: hidden;">
+        {{ with .Resources.GetMatch "images/full.jpg" }}
+          <img class="img-fluid" src="{{ .Permalink }}" />
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="col-12 mt-4">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}

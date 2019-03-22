@@ -1,0 +1,13 @@
+baseURL = "https://developers.hl2.com"
+languageCode = "en-gb"
+title = "hl2 Developers"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT = true
+
+[params]
+  description = "Build amazing IoT projects with hl2 technologies"
+  hl2WebsiteURL = "https://hl2.com"
+  twitterProfileURL = "https://twitter.com/hl2_fr"
+  linkedInProfileURL = "https://www.linkedin.com/company/hl2-fr"
+  gitHubProfileURL = "https://github.com/hl2"
+  googleTagManagerID = "GTM-5WGKRMB"

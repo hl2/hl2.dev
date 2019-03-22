@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-3 mr-3">
+      {{ partial "docs-menu" . }}
+    </div>
+
+    <div class="col-8">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <h1>{{ .Title }}</h1>
+              <p class="lead">{{ .Description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

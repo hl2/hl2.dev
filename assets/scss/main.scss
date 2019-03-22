@@ -1,0 +1,15 @@
+@import "bootstrap/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+:root {
+  --navbar-height: 56px;
+  --main-background-color: #093c76;
+}
+
+.article {
+  font-family: 'Playfair Display', serif !important;
+}
+
+footer {
+  background-color: #20232a;
+}
