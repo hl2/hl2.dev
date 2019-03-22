@@ -23,7 +23,7 @@
 
   <div class="mt-5">
     {{ $blogPosts := (where .Site.RegularPages "Section" "blog") }}
-    {{ partial "blog-post-list" (first 5 $blogPosts) }}
+    {{ partial "post-list" (first 5 $blogPosts) }}
   </div>
 </div>
 {{ end }}
