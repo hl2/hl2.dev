@@ -1,4 +1,4 @@
-# developers.hl2.com &middot; [![Build Status](https://travis-ci.com/hl2/developers.hl2.com.svg?branch=master)](https://travis-ci.com/hl2/developers.hl2.com)
+# developers.hl2.com &middot; [![Build Status](https://travis-ci.com/hl2/hl2.dev?branch=master)](https://travis-ci.com/hl2/hl2.dev)
 
 https://developers.hl2.com website.
 
