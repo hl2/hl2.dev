@@ -3,7 +3,8 @@
   <h1>{{ .Title }}</h1>
   <p class="lead">{{ .Description }}</p>
 
-  {{ partial "blog-post-list" .Pages }}
+  <div class="mt-5">
+    {{ partial "blog-post-list" .Pages }}
+  </div>
 </div>
-
 {{ end }}

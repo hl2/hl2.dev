@@ -1,4 +1,4 @@
-<ul class="list-unstyled mt-5">
+<ul class="list-unstyled">
   {{ range . }}
   {{ $author := .Params.Author }}
 
@@ -8,12 +8,13 @@
     {{ end }}
     <div class="media-body align-self-center">
       <a href="{{ .Permalink }}" class="h5 mt-0 mb-1">{{ .Title }}</a>
-      <br />
-      {{ (index .Site.Data.authors $author).fullName }}
-      <br />
-      {{ .Date.Format "January 02, 2006" }} &middot; ☕ {{ .ReadingTime }} min
-      read
+      <div>
+        {{ (index .Site.Data.authors $author).fullName }}
+        <br />
+        {{ .Date.Format "January 02, 2006" }} &middot; ☕ {{ .ReadingTime }} min
+        read
+      </div>
     </div>
   </li>
-  {{ end }}
+  {{ end}}
 </ul>

@@ -8,7 +8,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+    <meta
+      name="description"
+      content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"
+    />
 
     {{ template "_internal/opengraph.html" . }}
 
@@ -26,14 +29,14 @@
     {{ end }}
     <!-- End Google Tag Manager -->
 
-    {{ $bootstrapCSS := resources.Get "scss/bootstrap/bootstrap.scss" | resources.ToCSS }}
-    {{ $mainCSS := resources.Get "scss/main.scss" | resources.ToCSS }}
-    {{ $fontAwesomeCSS := resources.Get "css/fontawesome.css" }}
-    {{ $bundleCSS := slice $mainCSS $fontAwesomeCSS $bootstrapCSS | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $bootstrap := resources.Get "scss/bootstrap/bootstrap.scss" | resources.ToCSS }}
+    {{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
+    {{ $fontAwesome := resources.Get "css/fontawesome.css" }}
+    {{ $bundle := slice $main $fontAwesome $bootstrap | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
     <link
       rel="stylesheet"
-      href="{{ $bundleCSS.Permalink }}"
-      integrity="{{ $bundleCSS.Data.Integrity }}"
+      href="{{ $bundle.Permalink }}"
+      integrity="{{ $bundle.Data.Integrity }}"
       crossorigin="anonymous"
     />
 
@@ -45,7 +48,7 @@
     />
 
     <title>
-      {{ if .IsHome }}Home{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}
+      {{ if .IsHome }}hl2 Developers{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
     </title>
   </head>
   <body>
@@ -71,14 +74,14 @@
 
     {{ partial "footer" . }}
 
-    {{ $jquerySlimJS := resources.Get "js/jquery-3.3.1.slim.min.js" }}
-    {{ $popperJS := resources.Get "js/popper-1.14.7.min.js" }}
-    {{ $bootstrapJS := resources.Get "js/bootstrap-4.3.1.min.js" }}
-    {{ $mainJS := resources.Get "js/main.js" }}
-    {{ $bundleJS := slice $jquerySlimJS $popperJS $bootstrapJS $mainJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $jquery := resources.Get "js/jquery-3.3.1.slim.min.js" }}
+    {{ $popper := resources.Get "js/popper-1.14.7.min.js" }}
+    {{ $bootstrap := resources.Get "js/bootstrap-4.3.1.min.js" }}
+    {{ $main := resources.Get "js/main.js" }}
+    {{ $bundle := slice $jquery $popper $bootstrap $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script
-      src="{{ $bundleJS.Permalink }}"
-      integrity="{{ $bundleJS.Data.Integrity }}"
+      src="{{ $bundle.Permalink }}"
+      integrity="{{ $bundle.Data.Integrity }}"
       crossorigin="anonymous"
     ></script>
   </body>

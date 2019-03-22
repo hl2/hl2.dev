@@ -3,11 +3,12 @@
  * Main module
  */
 (function() {
-  document.addEventListener("DOMContentLoaded", function() {
-    document
-      .querySelector('select[id="navigation"]')
-      .addEventListener("change", function(event) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const select = document.querySelector('select[id="navigation"]');
+    if (select) {
+      select.addEventListener("change", event => {
         window.location = event.target.value;
       });
+    }
   });
 })();

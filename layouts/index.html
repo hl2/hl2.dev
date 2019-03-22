@@ -1,12 +1,10 @@
 {{ define "main" }}
-<div
-  class="jumbotron bg-light container-fluid border-bottom rounded-0 py-5 px-0 mb-0"
->
+<div class="container-fluid bg-light border-bottom py-5">
   <div class="container">
     <h1 class="display-4">Build amazing IoT projects with hl2 technologies</h1>
-    <a class="btn btn-primary btn-lg my-4" href="/docs" role="button"
-      >Getting Started <i class="fas fa-arrow-right"></i
-    ></a>
+    <a class="btn btn-primary btn-lg my-4" href="/docs" role="button">
+      Getting Started <i class="fas fa-arrow-right"></i>
+    </a>
   </div>
 </div>
 
@@ -16,18 +14,16 @@
     end-to-end technologies! The available documentation is listed below.
   </h2>
 
-  {{ range (where .Site.Sections "Type" "_default") }}
-  {{ partial "doc-list" .Sections }}
-  {{ end }}
+  {{ $docs := (index (where .Site.Sections "Type" "_default") 0).Sections }}
+  {{ partial "doc-list" $docs}}
 </div>
 
-{{ $blogPosts := (where .Site.RegularPages "Section" "blog") }}
-{{ if gt (len $blogPosts) 0 }}
 <div class="container my-5">
   <h2 class="font-weight-light">Recent Posts</h2>
 
-  {{ partial "blog-post-list" (first 5 (where .Site.RegularPages "Section" "blog")) }}
+  <div class="mt-5">
+    {{ $blogPosts := (where .Site.RegularPages "Section" "blog") }}
+    {{ partial "blog-post-list" (first 5 $blogPosts) }}
+  </div>
 </div>
-{{ end }}
-
 {{ end }}

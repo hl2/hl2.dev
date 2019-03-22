@@ -1,25 +1,25 @@
-<div class="nav flex-column nav-pills">
-  <a
-    href="{{ if .IsSection }}{{ .Permalink }}{{ else }}{{ .Parent.Permalink }}{{ end }}"
-    class="nav-link {{ if .IsSection }}active{{ end }}"
-    >Overview</a
-  >
+<div class="col-3 d-none d-lg-block mr-3">
+  <div class="nav flex-column nav-pills">
+    <a href="{{ cond .IsSection .Permalink .Parent.Permalink }}" class="nav-link {{ if .IsSection }}active{{ end }}">
+      Overview
+    </a>
 
-  {{ if .IsSection }}
-  {{ range sort .Pages }}
-  <a
-    href="{{ .Permalink }}"
-    class="nav-link {{ if eq .Title $.Title }}active{{ end }}"
-    >{{ .Title }}</a
-  >
-  {{ end }}
-  {{ else }}
-  {{ range sort .Parent.Pages }}
-  <a
-    href="{{ .Permalink }}"
-    class="nav-link {{ if eq .Title $.Title }}active{{ end }}"
-    >{{ .Title }}</a
-  >
-  {{ end }}
-  {{ end }}
+    {{ range (cond .IsSection .Pages .Parent.Pages) }}
+    <a href="{{ .Permalink }}" class="nav-link {{ if eq .Title $.Title }}active{{ end }}">
+      {{ .Title }}
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+<div class="col-12 d-block d-lg-none mb-5">
+  <select id="navigation" class="custom-select">
+    <option value="{{ cond .IsSection .Permalink .Parent.Permalink }}" {{ if .IsSection }}selected{{ end }}>
+      Overview
+    </option>
+
+    {{ range (cond .IsSection .Pages .Parent.Pages) }}
+    <option value="{{ .Permalink }}" {{ if eq .Title $.Title }}selected{{ end }}>{{ .Title }}</option>
+    {{ end }}
+  </select>
 </div>

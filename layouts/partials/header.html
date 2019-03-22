@@ -1,8 +1,8 @@
 <header class="bg-light {{ if not .IsHome }}border-bottom{{ end }}">
   <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand text-monospace" href="/"
-      >hl2 <strong>Developers</strong></a
-    >
+    <a class="navbar-brand text-monospace" href="/">
+      hl2 <strong>Developers</strong>
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -11,7 +11,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbar">
+    <div id="navbar" class="collapse navbar-collapse">
       <div class="navbar-nav ml-auto">
         <a class="nav-item nav-link" href="/docs">Docs</a>
         <a class="nav-item nav-link" href="/blog">Blog</a>
@@ -20,19 +20,30 @@
           class="nav-item nav-link"
           target="_blank"
           href="{{ .Site.Params.hl2WebsiteURL }}"
-          >hl2.com <i class="fas fa-external-link-alt"></i
-        ></a>
-        <a class="nav-item nav-link" href="{{ .Site.Params.TwitterProfileURL }}"
-          ><i class="fab fa-twitter"></i
-        ></a>
+        >
+          hl2.com <i class="fas fa-external-link-alt"></i>
+        </a>
         <a
           class="nav-item nav-link"
+          target="_blank"
+          href="{{ .Site.Params.TwitterProfileURL }}"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          class="nav-item nav-link"
+          target="_blank"
           href="{{ .Site.Params.LinkedInProfileURL }}"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a class="nav-item nav-link" href="{{ .Site.Params.GitHubProfileURL }}"
-          ><i class="fab fa-github"></i
-        ></a>
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          class="nav-item nav-link"
+          target="_blank"
+          href="{{ .Site.Params.GitHubProfileURL }}"
+        >
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </div>
   </nav>

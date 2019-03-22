@@ -2,8 +2,11 @@
   <div class="container">
     <div class="row align-items-center py-5">
       <div class="col-12 text-center col-lg-6 text-lg-left">
-        <p class="font-weight-light mb-0">👋 Never miss a technical update, subscribe to our newsletter!</p>
+        <p class="font-weight-light mb-0">
+          👋 Never miss a technical update, subscribe to our newsletter!
+        </p>
       </div>
+
       <div class="col-12 mt-3 col-lg-6 mt-lg-0">
         <form
           method="POST"
@@ -24,29 +27,29 @@
       </div>
     </div>
 
-    <div class="row align-items-center py-4">
-      <div class="col-4 text-muted">&copy; {{ now.Format "2006"}} hl2</div>
+    <div class="row align-items-center py-5 text-muted">
+      <div class="col-4">&copy; {{ now.Format "2006"}} hl2</div>
 
-      <div class="col-4 text-muted text-center">
+      <div class="col-4 text-center">
         Made with <i class="fas fa-heart"></i> by hl2
       </div>
 
       <div class="col-4 text-right">
         <ul class="list-unstyled list-inline mb-0">
           <li class="list-inline-item">
-            <a class="text-muted" href="{{ .Site.Params.TwitterProfileURL }}"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <a class="text-muted" href="{{ .Site.Params.TwitterProfileURL }}">
+              <i class="fab fa-twitter"></i>
+            </a>
           </li>
           <li class="list-inline-item">
-            <a class="text-muted" href="{{ .Site.Params.LinkedInProfileURL }}"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a class="text-muted" href="{{ .Site.Params.LinkedInProfileURL }}">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </li>
           <li class="list-inline-item">
-            <a class=" text-muted" href="{{ .Site.Params.GitHubProfileURL }}"
-              ><i class="fab fa-github"></i
-            ></a>
+            <a class=" text-muted" href="{{ .Site.Params.GitHubProfileURL }}">
+              <i class="fab fa-github"></i>
+            </a>
           </li>
         </ul>
       </div>
