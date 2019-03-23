@@ -58,7 +58,16 @@
     />
 
     <title>
-      {{ if .IsHome }}hl2 Developers{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+      {{ if not .IsHome }}
+        {{ with .CurrentSection }}
+          {{ if .IsHome }}
+            {{ $.Title }} |
+          {{ else }}
+            {{ cond $.IsPage (print $.Title " |") "" }} {{ .Title }} |
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ .Site.Title }}
     </title>
   </head>
   <body>
