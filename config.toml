@@ -10,4 +10,5 @@ enableRobotsTXT = true
   twitterProfileURL = "https://twitter.com/hl2_fr"
   linkedInProfileURL = "https://www.linkedin.com/company/hl2-fr"
   gitHubProfileURL = "https://github.com/hl2"
+  gitHubRepositoryURL = "https://github.com/hl2/hl2.dev"
   googleTagManagerID = "GTM-5WGKRMB"

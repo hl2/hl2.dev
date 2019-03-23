@@ -16,6 +16,11 @@
   }
 }
 
+.form-group.required label:after {
+  content: "*";
+  color: red;
+}
+
 footer {
   background-color: #20232a;
 }
