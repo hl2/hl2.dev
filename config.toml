@@ -6,6 +6,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Build amazing IoT projects with hl2 technologies"
+  images = ["images/open-graph-cover.png"]
   hl2WebsiteURL = "https://hl2.com"
   twitterProfileURL = "https://twitter.com/hl2_fr"
   linkedInProfileURL = "https://www.linkedin.com/company/hl2-fr"
