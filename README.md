@@ -4,11 +4,10 @@ https://developers.hl2.com website.
 
 ## Getting started
 
-1. Install [Hugo](https://gohugo.io/getting-started/installing/)
-2. Install [Node.js](https://nodejs.org/en/)
-3. Install npm dependencies with `npm install`
-4. Start development server with `hugo server`
-5. Browse http://localhost:1313
+1. Install [Hugo](https://gohugo.io/getting-started/installing/) and [Node.js](https://nodejs.org/en/)
+2. Install dependencies with `npm install`
+3. Start development server with `hugo server`
+4. Browse http://localhost:1313
 
 ## License
 
