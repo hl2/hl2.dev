@@ -10,7 +10,7 @@
 
     <meta
       name="description"
-      content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"
+      content="{{ with.Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"
     />
 
     {{ template "_internal/opengraph.html" . }}
@@ -29,15 +29,25 @@
     {{ end }}
     <!-- End Google Tag Manager -->
 
-    {{ $bootstrap := resources.Get "scss/bootstrap/bootstrap.scss" | resources.ToCSS }}
     {{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
-    {{ $fontAwesome := resources.Get "css/fontawesome.css" }}
-    {{ $bundle := slice $main $fontAwesome $bootstrap | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $bundle := slice $main | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint "sha512" }}
     <link
       rel="stylesheet"
       href="{{ $bundle.Permalink }}"
       integrity="{{ $bundle.Data.Integrity }}"
       crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+      rel="stylesheet"
     />
 
     <link
@@ -74,9 +84,9 @@
 
     {{ partial "footer" . }}
 
-    {{ $jquery := resources.Get "js/jquery-3.3.1.slim.min.js" }}
-    {{ $popper := resources.Get "js/popper-1.14.7.min.js" }}
-    {{ $bootstrap := resources.Get "js/bootstrap-4.3.1.min.js" }}
+    {{ $jquery := resources.Get "js/jquery.slim.min.js" }}
+    {{ $popper := resources.Get "js/popper.min.js" }}
+    {{ $bootstrap := resources.Get "js/bootstrap.min.js" }}
     {{ $main := resources.Get "js/main.js" }}
     {{ $bundle := slice $jquery $popper $bootstrap $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script

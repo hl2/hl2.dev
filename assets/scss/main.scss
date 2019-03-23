@@ -1,5 +1,4 @@
-@import "bootstrap/bootstrap.scss";
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @include media-breakpoint-down(sm) {
   html {
