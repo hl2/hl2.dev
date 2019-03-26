@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @include media-breakpoint-down(sm) {
@@ -20,6 +21,7 @@
   color: red;
 }
 
-footer {
-  background-color: #20232a;
+.index-cover,
+.menu-bar {
+  background-color: $hl2-color;
 }
