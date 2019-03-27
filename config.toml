@@ -3,6 +3,8 @@ languageCode = "en-gb"
 title = "hl2 Developers"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 
 [params]
   description = "Build amazing IoT projects with hl2 technologies"
@@ -13,3 +15,4 @@ enableRobotsTXT = true
   gitHubProfileURL = "https://github.com/hl2"
   gitHubRepositoryURL = "https://github.com/hl2/hl2.dev"
   googleTagManagerID = "GTM-5WGKRMB"
+  hl2PanoramaOpenAPIRepositoryURL = "https://github.com/hl2/hl2-panorama-openapi"

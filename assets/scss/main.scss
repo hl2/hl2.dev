@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./syntax.scss";
 
 @include media-breakpoint-down(sm) {
   html {
@@ -7,12 +8,24 @@
   }
 }
 
+header,
+.jumbo {
+  background-color: $hl2-color;
+}
+
 .article {
   font-family: "Playfair Display", serif !important;
 
-  .cover-img {
+  .img-cover {
     height: 300px;
     overflow: hidden;
+  }
+}
+
+.doc-content {
+  h2,
+  h3 {
+    @extend .py-4;
   }
 }
 
@@ -21,7 +34,19 @@
   color: red;
 }
 
-.index-cover,
-.menu-bar {
-  background-color: $hl2-color;
+.note {
+  @extend .shadow-sm, .rounded, .p-3, .border;
+  border-left-width: 3px !important;
+
+  &.info {
+    border-left-color: $info !important;
+  }
+
+  &.warning {
+    border-left-color: $warning !important;
+  }
+
+  & p:last-child {
+    @extend .mb-0;
+  }
 }

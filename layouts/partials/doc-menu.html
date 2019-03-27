@@ -1,4 +1,4 @@
-<div class="col-3 d-none d-lg-block mr-3">
+<div class="d-none d-lg-block">
   <div class="nav flex-column nav-pills">
     <a href="{{ cond .IsSection .Permalink .Parent.Permalink }}" class="nav-link {{ if .IsSection }}active{{ end }}">
       Overview
@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<div class="col-12 d-block d-lg-none mb-5">
+<div class="d-block d-lg-none mb-5">
   <select id="navigation" class="custom-select">
     <option value="{{ cond .IsSection .Permalink .Parent.Permalink }}" {{ if .IsSection }}selected{{ end }}>
       Overview
