@@ -16,3 +16,5 @@ pygmentsUseClasses = true
   gitHubRepositoryURL = "https://github.com/hl2/hl2.dev"
   googleTagManagerID = "GTM-5WGKRMB"
   hl2PanoramaOpenAPIRepositoryURL = "https://github.com/hl2/hl2-panorama-openapi"
+  contactEmail = "contact@hl2.com"
+  supportEmail = "support@hl2.com"
