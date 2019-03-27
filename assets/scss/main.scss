@@ -35,7 +35,7 @@ header,
 }
 
 .note {
-  @extend .shadow-sm, .rounded, .p-3, .border;
+  @extend  .rounded, .p-4, .border;
   border-left-width: 3px !important;
 
   &.info {
