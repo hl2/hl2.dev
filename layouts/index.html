@@ -14,7 +14,7 @@
     end-to-end technologies! The available documentation is listed below.
   </h2>
 
-  {{ $docs := (index (where .Site.Sections "Type" "_default") 0).Sections }}
+  {{ $docs := (index (where .Site.Sections "Section" "docs") 0).Sections }}
   {{ partial "doc-list" $docs}}
 </div>
 

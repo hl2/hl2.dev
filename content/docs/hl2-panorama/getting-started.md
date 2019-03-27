@@ -2,7 +2,6 @@
 title: Getting Started
 description: Everything you need to know about hl2 Panorama.
 date: 2019-03-19T18:13:14+04:00
-type: docs
 weight: 1
 ---
 

@@ -1,11 +1,20 @@
+{{ $pages := (where (cond .IsSection .Pages .Parent.Pages) "Params.hidden" "!=" true) }}
+{{ $overviewPermalink := (cond .IsSection .Permalink .Parent.Permalink) }}
+
 <div class="d-none d-lg-block">
   <div class="nav flex-column nav-pills">
-    <a href="{{ cond .IsSection .Permalink .Parent.Permalink }}" class="nav-link {{ if .IsSection }}active{{ end }}">
+    <a
+      href="{{ $overviewPermalink }}"
+      class="nav-link {{ if .IsSection }}active{{ end }}"
+    >
       Overview
     </a>
 
-    {{ range (cond .IsSection .Pages .Parent.Pages) }}
-    <a href="{{ .Permalink }}" class="nav-link {{ if eq .Title $.Title }}active{{ end }}">
+    {{ range $pages }}
+    <a
+      href="{{ .Permalink }}"
+      class="nav-link {{ if eq .Title $.Title }}active{{ end }}"
+    >
       {{ .Title }}
     </a>
     {{ end }}
@@ -14,12 +23,17 @@
 
 <div class="d-block d-lg-none mb-5">
   <select id="navigation" class="custom-select">
-    <option value="{{ cond .IsSection .Permalink .Parent.Permalink }}" {{ if .IsSection }}selected{{ end }}>
+    <option
+      value="{{ $overviewPermalink }}" {{ if .IsSection}}selected{{ end }}>
       Overview
     </option>
 
-    {{ range (cond .IsSection .Pages .Parent.Pages) }}
-    <option value="{{ .Permalink }}" {{ if eq .Title $.Title }}selected{{ end }}>{{ .Title }}</option>
+    {{ range $pages }}
+    <option
+      value="{{ .Permalink }}"
+      {{ if eq .Title $.Title }}selected{{ end }}
+      >{{ .Title }}</option
+    >
     {{ end }}
   </select>
 </div>

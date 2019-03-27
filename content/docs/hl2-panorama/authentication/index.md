@@ -2,7 +2,6 @@
 title: Authentication
 description: Everything you need to know to authenticate your requests to hl2 Panorama REST API.
 date: 2019-03-19T18:13:14+04:00
-type: docs
 weight: 2
 ---
 
