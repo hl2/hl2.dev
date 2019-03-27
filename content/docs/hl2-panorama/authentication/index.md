@@ -1,12 +1,12 @@
 ---
 title: Authentication
-description: Everything you need to know to authenticate you requests to hl2 Panorama REST API.
+description: Everything you need to know to authenticate your requests to hl2 Panorama REST API.
 date: 2019-03-19T18:13:14+04:00
 type: docs
 weight: 2
 ---
 
-Any request made to the hl2 Panorama API must include the following `Authorization` header, containing a valid API key for your organization. API keys are created through the hl2 Panorama WEB interface.
+Any request made to the hl2 Panorama API must include the following `Authorization` header, containing a valid API key for your organization. API keys are created through the hl2 Panorama web interface.
 
 ```http
 Authorization: Bearer API_KEY
@@ -16,16 +16,16 @@ Authorization: Bearer API_KEY
 
 ## Generate an API key
 
-To generate an API Key you must be an `owner` of the organization you want to generate an API key for. The API key can be generated through the WEB interface in the organization’s settings page.
+To generate an API Key you must be an `owner` of the organization you want to generate a key for. The API key can be generated through the web interface in the organization settings page.
 
 {{< page-resource "screen-1.png" >}}
 
-Once the API key is generated you must keep it secret and remember it because it will not be possible to retrieve it.
+Once the API key is generated you must keep it secret and store it because it will not be possible to retrieve it later.
 
 {{< page-resource "screen-2.png" >}}
 
 ## Revoke an API key
 
-To revoke an API Key you must be an `owner` of the organization you want to revoke the API key for. Keys can be revoked independently or all at once by an organization.
+To revoke an API Key you must be an `owner` of the key's organization. Keys can be revoked independently or all at once.
 
 {{< page-resource "screen-3.png" >}}

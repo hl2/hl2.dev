@@ -6,11 +6,11 @@ type: docs
 weight: 1
 ---
 
-hl2 Panorama is a modern and scalable IoT Gateway that makes deploying and integrating IoT devices easy. As an edge service it will collect and authenticate your IoT devices data coming from a public or private Network provider and push this data to your application / infrastructure.
+hl2 Panorama is a modern and scalable IoT Gateway that makes deploying and integrating IoT devices easy. As an edge service it collects and authenticates your IoT device data coming from a public or private network provider and push this data to your application / infrastructure.
 
-We've implemented the required features for you to integrate with success a fleet of devices in an existing or new infrastructure. For a list of the principal features we have implements have a look at the [features](#features) section below.
+We've implemented the required features for you to successfully integrate a fleet of devices into an existing or new infrastructure. For a list of the principal features we have implemented, have a look at the [features](#features) section below.
 
-{{% note "info" %}}hl2 Panorama is currently available as a private SaaS service and will be publicly available soon! If you have an IoT project and want to obtain an early access, drop us an email from the [contact](/contact) page.{{% /note %}}
+{{% note "info" %}}hl2 Panorama is currently available as a private SaaS service and will be publicly available soon! If you have an IoT project and want to gain early access, drop us an email from the [contact](/contact) page.{{% /note %}}
 
 ## Features
 
