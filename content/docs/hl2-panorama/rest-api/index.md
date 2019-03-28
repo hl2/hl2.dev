@@ -23,7 +23,7 @@ As the repository is public you can submit an [issue]({{< param "hl2PanoramaOpen
 
 A tool we use extensively at hl2 is [Postman](https://www.getpostman.com/). It allows us to manage our hl2 Panorama instances via their REST API through an intuitive interface.
 
-Since version `v6.6`, it's now possible to import an OpenAPI v3.0 descriptor via file, url, or by directly entering JSON or YAML as raw text from the Import button within the Postman App (See [Postman Supports OpenAPI 3.0](https://blog.getpostman.com/2018/12/11/postman-supports-openapi-3-0/)). So, you just have to paste https://raw.githubusercontent.com/hl2/hl2-panorama-openapi/master/openapi/spec.json in the import dialog of the Postman App.
+Since version `v6.6`, it's now possible to import an OpenAPI v3.0 descriptor via file, url, or by directly entering JSON or YAML as raw text from the Import button within the Postman App (See [Postman Supports OpenAPI 3.0](https://blog.getpostman.com/2018/12/11/postman-supports-openapi-3-0/)). So, you just have to paste https://raw.githubusercontent.com/hl2/hl2-panorama-openapi/master/openapi/spec.json into the import dialog of the Postman App.
 
 {{< page-resource "screen-1.png" >}}
 
