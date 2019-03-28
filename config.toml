@@ -1,4 +1,4 @@
-baseURL = "https://hl2.github.io/hl2.dev/"
+baseURL = "https://hl2.github.io/hl2.dev"
 languageCode = "en-gb"
 title = "hl2 Developers"
 disableKinds = ["taxonomy", "taxonomyTerm"]
