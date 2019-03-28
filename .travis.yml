@@ -1,9 +1,19 @@
 dist: xenial
 language: node_js
 before_install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
+- sudo dpkg -i hugo*.deb
 script:
-  - hugo
+- hugo
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  local-dir: public
+  target-branch: gh-pages
+  on:
+    branch: master
 notifications:
   email: false
+env:
+  secure: ryKvGDXn3VQy8xxAfdc3Y56Jv8C1tKWvQYSEGCrlELnDaHEM5YFGzWnfZl6Fyeulyy4t6hsThnaozP9lV/dNJrP2uyC9AIRhkFORN4TlnesRNfFc2YaM5OIPt32zvOAwsZpaoxZsO88DPy2zclPgOwPA8otdqIE/Ysd7vsKq+V2RR2WOfkvxRKee4tAb4gjFDUp86m803WtdRz5wO96NE8edDXv5OiZjDVjv7SVCKyd2cJc/iiv0mjnyNdDtOaJbaHkdcIAyig6QXdYLRlqO5DIBq3EAI1AmifxPdFobcGvirCGLGNxOqGql1gwhsZXG8V4RC9GBsul4IccNoyWm7IxXfDQp9RxnqbSfqxJUMdCcjwDPBGiSjectlwDqK7s9Rhrup1zRKiaLVN2eH8/4nk+6g/tw/K9bQcc1I4/mvAomximIj8QIX2BEsCd5noEpoQwtGAKlIZ/e0AseU8Bcpua64lvEsZktF9r39vbkrp8YSMbhSiLDA1dKDTJw4a7YWoJoL+k4oYHgM2qxzQK+33bv6gYnt1w718z0KgiDfmIMWzf0ivMDcgLxTnW9Y2JI+e2z82eCoAIE9GeyLgH368k6St2H4SFRkmUmxxjlg76N7sBoQY/BGBwZMo5paun0groXNYOwYXQGEpymkwpzCa/3WE7H3LHs7RJ6DPyTtsY=
