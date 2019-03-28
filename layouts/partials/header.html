@@ -1,5 +1,11 @@
+{{ $navContainerClass := "container"}}
+{{ with .Parent }}
+  {{ if (eq .Section "docs") }}
+    {{ $navContainerClass = "container-fluid"}}
+  {{ end }}
+{{ end }}
 <header>
-  <nav class="container navbar navbar-expand-lg navbar-dark">
+  <nav class="{{ $navContainerClass }} navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand text-monospace" href="{{ ref . "/"}}">
       hl2 <strong>Developers</strong>
     </a>
