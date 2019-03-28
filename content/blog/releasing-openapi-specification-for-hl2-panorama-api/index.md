@@ -1,5 +1,5 @@
 ---
-title: "Releasing OpenAPI Specification for hl2 Panorama API"
+title: "Releasing the OpenAPI specification for the hl2 Panorama API"
 date: 2019-03-18T17:15:04+04:00
 author: kevinpollet
 ---
