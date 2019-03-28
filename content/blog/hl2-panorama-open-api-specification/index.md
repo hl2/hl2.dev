@@ -2,7 +2,6 @@
 title: "Open API specification for hl2 Panorama"
 date: 2019-03-18T17:15:04+04:00
 author: kevinpollet
-draft: true
 ---
 
 ## What is Lorem Ipsum?

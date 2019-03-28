@@ -34,4 +34,4 @@ and the corresponding collection will be created:
 ## Lifecycle
 
 {{% note "warning" %}}
-We will commit ourselves to support the API and maintain backwards compatibility in the future, but we reserve the right to make incompatible changes when necessary. If you experience any issue, drop us an email from the [contact](/contact) page.{{% /note %}}
+We will commit ourselves to support the API and maintain backwards compatibility in the future, but we reserve the right to make incompatible changes when necessary. If you experience any issue, drop us an email from the [contact]({{< ref "/contact.html" >}}) page.{{% /note %}}
