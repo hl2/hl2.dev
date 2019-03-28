@@ -13,7 +13,7 @@ As described before, we strongly believe in standards as a way of communication 
 
 {{< blockquote >}}The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic.{{< /blockquote >}}
 
-You can browse the latest version of the hl2 Panorama API descriptor by clicking this <a href="{{< ref "docs/hl2-panorama/openapi-specification.html" >}}" target="\_blank">link</a> or by browsing the [repository]({{< param "hl2PanoramaOpenAPIRepositoryURL" >}}).
+You can browse the latest version of the hl2 Panorama API descriptor by clicking this <a href="{{< ref "/docs/hl2-panorama/openapi-specification.html" >}}" target="\_blank">link</a> or by browsing the [repository]({{< param "hl2PanoramaOpenAPIRepositoryURL" >}}).
 
 {{% note "info" "Found an issue?" %}}
 As the repository is public you can submit an [issue]({{< param "hl2PanoramaOpenAPIRepositoryURL" >}}/issues) - or even better open a [pull request]({{< param "hl2PanoramaOpenAPIRepositoryURL" >}}/pulls).
