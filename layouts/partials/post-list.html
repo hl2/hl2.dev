@@ -4,7 +4,7 @@
 
   <li class="media border p-2 mb-2 rounded">
     {{ with .Resources.GetMatch "images/thumbnail.jpg" }}
-    <img class="align-self-center rounded mr-3" src="{{ .Permalink }}" />
+    <img class="align-self-center rounded-circle mr-3" src="{{ .Permalink }}" />
     {{ end }}
     <div class="media-body align-self-center">
       <a href="{{ .Permalink }}" class="h5 mt-0 mb-1">{{ .Title }}</a>
