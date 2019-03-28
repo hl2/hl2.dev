@@ -1,20 +1,25 @@
 {{ define "main" }}
-<div class="container my-5">
+<div class="container-fluid my-5">
   <div class="row">
-    <div class="col-12 col-lg-3">
+    <div class="col-12 col-lg-2">
       {{ partial "doc-menu" . }}
     </div>
 
-    <div class="col-12 col-lg-9">
+    <div class="col-12 col-lg-8 px-lg-5">
       <h1>{{ .Title }}</h1>
       <p class="lead">{{ .Description }}</p>
 
       <hr />
 
-      <div class="row doc-content">
-        <div class="col-12">
-          {{ .Content }}
-        </div>
+      <div class="doc-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="border-left p-3 position-fixed">
+        <h6 class="mb-3">What's on this page?</h6>
+        {{ .TableOfContents }}
       </div>
     </div>
   </div>

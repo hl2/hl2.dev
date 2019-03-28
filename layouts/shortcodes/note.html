@@ -1,15 +1,14 @@
-{{ $iconClasses := (cond (eq (.Get 0) "info") "fas fa-info-circle" "fas fa-exclamation-circle") }}
+{{ $type := .Get 0}}
+{{ $iconClasses := (cond (eq $type "info") "fas fa-info-circle" "fas fa-exclamation-circle") }}
 
-<div class="note {{ .Get 0 }}">
-  <div class="row no-gutters align-items-center">
-    <div class="col-1">
-      <i class="{{ $iconClasses }} h3 mb-0 text-{{ $.Get 0 }}"></i>
-    </div>
-    <div class="col-11">
-      {{ with (.Get 1)}}
-      <h5 class="text-{{ $.Get 0 }}">{{ . }}</h5>
-      {{ end }}
-      {{ .Inner }}
-    </div>
+<div class="row border rounded align-items-center py-3 m-0 note {{ $type }}">
+  <div class="col-2 col-sm-1 text-center">
+    <i class="h3 text-{{ $type }} mb-0 {{ $iconClasses }}"></i>
+  </div>
+  <div class="col-10 col-sm-11">
+    {{ with (.Get 1)}}
+    <h5 class="text-{{ $type }}">{{ . }}</h5>
+    {{ end }}
+    {{ .Inner }}
   </div>
 </div>

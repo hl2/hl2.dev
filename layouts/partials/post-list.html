@@ -1,8 +1,8 @@
-<ul class="list-unstyled">
+<ul class="post-list list-unstyled">
   {{ range . }}
   {{ $author := .Params.Author }}
 
-  <li class="media border p-2 mb-2 rounded shadow-sm">
+  <li class="media border p-2 mb-2 rounded">
     {{ with .Resources.GetMatch "images/thumbnail.jpg" }}
     <img class="align-self-center mr-3" src="{{ .Permalink }}" />
     {{ end }}

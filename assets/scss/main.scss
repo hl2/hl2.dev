@@ -22,6 +22,18 @@ header,
   }
 }
 
+.chapter-list {
+  .card:hover {
+    @extend .shadow;
+  }
+}
+
+.doc-list {
+  .card:hover {
+    @extend .shadow;
+  }
+}
+
 .doc-content {
   h2,
   h3 {
@@ -35,7 +47,6 @@ header,
 }
 
 .note {
-  @extend  .rounded, .p-4, .border;
   border-left-width: 3px !important;
 
   &.info {
@@ -48,5 +59,17 @@ header,
 
   & p:last-child {
     @extend .mb-0;
+  }
+}
+
+.post-list {
+  li:hover {
+    @extend .shadow;
+  }
+}
+
+#TableOfContents {
+  ul {
+    @extend .list-unstyled;
   }
 }
