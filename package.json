@@ -1,7 +1,7 @@
 {
   "name": "hl2.dev",
   "version": "0.0.0",
-  "description": "Dependencies of hl2.dev website",
+  "description": "hl2.dev dependencies",
   "private": true,
   "author": "hl2",
   "license": "SEE LICENSE IN LICENSE.md",
