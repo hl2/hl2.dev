@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hl2 Developers</title>
+    <link>https://developers.hl2.com/</link>
+    <description>Recent content on hl2 Developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 19 Mar 2019 18:13:14 +0400</lastBuildDate>
+    
+	<atom:link href="https://developers.hl2.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/getting-started/</link>
+      <pubDate>Tue, 19 Mar 2019 18:13:14 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/getting-started/</guid>
+      <description>hl2 Panorama is a modern and scalable IoT Gateway that makes deploying and integrating IoT devices easy. As an edge service it collects and authenticates your IoT device data coming from a public or private network provider and push this data to your application / infrastructure.
+We&amp;rsquo;ve implemented the required features for you to successfully integrate a fleet of devices into an existing or new infrastructure. For a list of the principal features we have implemented, have a look at the features section below.</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/authentication/</link>
+      <pubDate>Tue, 19 Mar 2019 18:13:14 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/authentication/</guid>
+      <description>Any request made to the hl2 Panorama API must include the following Authorization header, containing a valid API key for your organization. API keys are created through the hl2 Panorama web interface.
+Authorization: Bearer API_KEY   Several different keys may be created, or the same key can be shared by several users of the API. Be aware, though, that using the same key for several concurrent processes could induce rate limiting issues, just as firing many requests in rapid succession in any single process could.</description>
+    </item>
+    
+    <item>
+      <title>REST API</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/rest-api/</link>
+      <pubDate>Tue, 19 Mar 2019 18:13:29 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/rest-api/</guid>
+      <description>hl2 Panorama provides a REST API respecting the standard methods and status codes of HTTP. We&amp;rsquo;re also doing our best to provide meaningful endpoints which can be integrated easily into your infrastructure.
+OpenAPI Specification As described before, we strongly believe in standards as a way of communication between us and our customers. That&amp;rsquo;s why we have chosen to write an OpenAPI descriptor publicly available on GitHub. Here is a quote from the readme of the OpenAPI Specification repository on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://developers.hl2.com/contact/</link>
+      <pubDate>Mon, 18 Mar 2019 17:15:04 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/contact/</guid>
+      <description> Full Name  Email  Company  How may we help you?    Send    Found an issue? Sources are on on GitHub, so you can browse and submit issues or pull requests for bugs or any new features you may want implemented.   </description>
+    </item>
+    
+    <item>
+      <title>Legal Notices</title>
+      <link>https://developers.hl2.com/legal-notices/</link>
+      <pubDate>Mon, 18 Mar 2019 17:15:04 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/legal-notices/</guid>
+      <description>Copyright In accordance with the laws governing literary, artistic, and industrial property rights, the reproduction and/or use, alone or in combination, of some or all of the components on the hl2 site is strictly prohibited.
+All of the brands cited herein are registered trademarks.
+Company hl2
+A French &amp;ldquo;Société par Actions Simplifiée&amp;rdquo; with share capital of 584 592 €
+Futuropolis 5, Teleport 4, Avenue Thomas Edison, 86960, Futuroscope Chasseneuil, France R.</description>
+    </item>
+    
+    <item>
+      <title>OpenAPI Specification</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/openapi-specification/</link>
+      <pubDate>Mon, 18 Mar 2019 17:15:04 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/openapi-specification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Releasing the OpenAPI specification for the hl2 Panorama API</title>
+      <link>https://developers.hl2.com/blog/releasing-the-openapi-specification-for-the-hl2-panorama-api/</link>
+      <pubDate>Mon, 18 Mar 2019 17:15:04 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/blog/releasing-the-openapi-specification-for-the-hl2-panorama-api/</guid>
+      <description>With the release of our new documentation web site, powered by Hugo, we&amp;rsquo;re also releasing the OpenAPI Specification for the hl2 Panorama API. As you already know, hl2 Panorama provides a REST API which can be used to integrate and administrate it easily. Every language has an HTTP client so you can script and integrate it as you want! As an example, the following JS script will log the authenticated account to the console:</description>
+    </item>
+    
+  </channel>
+</rss>

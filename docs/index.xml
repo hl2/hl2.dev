@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on hl2 Developers</title>
+    <link>https://developers.hl2.com/docs/</link>
+    <description>Recent content in Docs on hl2 Developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 19 Mar 2019 18:13:14 +0400</lastBuildDate>
+    
+	<atom:link href="https://developers.hl2.com/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

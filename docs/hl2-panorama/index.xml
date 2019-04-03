@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hl2 Panorama on hl2 Developers</title>
+    <link>https://developers.hl2.com/docs/hl2-panorama/</link>
+    <description>Recent content in hl2 Panorama on hl2 Developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 19 Mar 2019 18:13:14 +0400</lastBuildDate>
+    
+	<atom:link href="https://developers.hl2.com/docs/hl2-panorama/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/getting-started/</link>
+      <pubDate>Tue, 19 Mar 2019 18:13:14 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/getting-started/</guid>
+      <description>hl2 Panorama is a modern and scalable IoT Gateway that makes deploying and integrating IoT devices easy. As an edge service it collects and authenticates your IoT device data coming from a public or private network provider and push this data to your application / infrastructure.
+We&amp;rsquo;ve implemented the required features for you to successfully integrate a fleet of devices into an existing or new infrastructure. For a list of the principal features we have implemented, have a look at the features section below.</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/authentication/</link>
+      <pubDate>Tue, 19 Mar 2019 18:13:14 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/authentication/</guid>
+      <description>Any request made to the hl2 Panorama API must include the following Authorization header, containing a valid API key for your organization. API keys are created through the hl2 Panorama web interface.
+Authorization: Bearer API_KEY   Several different keys may be created, or the same key can be shared by several users of the API. Be aware, though, that using the same key for several concurrent processes could induce rate limiting issues, just as firing many requests in rapid succession in any single process could.</description>
+    </item>
+    
+    <item>
+      <title>REST API</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/rest-api/</link>
+      <pubDate>Tue, 19 Mar 2019 18:13:29 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/rest-api/</guid>
+      <description>hl2 Panorama provides a REST API respecting the standard methods and status codes of HTTP. We&amp;rsquo;re also doing our best to provide meaningful endpoints which can be integrated easily into your infrastructure.
+OpenAPI Specification As described before, we strongly believe in standards as a way of communication between us and our customers. That&amp;rsquo;s why we have chosen to write an OpenAPI descriptor publicly available on GitHub. Here is a quote from the readme of the OpenAPI Specification repository on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>OpenAPI Specification</title>
+      <link>https://developers.hl2.com/docs/hl2-panorama/openapi-specification/</link>
+      <pubDate>Mon, 18 Mar 2019 17:15:04 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/docs/hl2-panorama/openapi-specification/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

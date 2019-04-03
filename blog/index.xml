@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on hl2 Developers</title>
+    <link>https://developers.hl2.com/blog/</link>
+    <description>Recent content in Blog on hl2 Developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 18 Mar 2019 17:15:04 +0400</lastBuildDate>
+    
+	<atom:link href="https://developers.hl2.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Releasing the OpenAPI specification for the hl2 Panorama API</title>
+      <link>https://developers.hl2.com/blog/releasing-the-openapi-specification-for-the-hl2-panorama-api/</link>
+      <pubDate>Mon, 18 Mar 2019 17:15:04 +0400</pubDate>
+      
+      <guid>https://developers.hl2.com/blog/releasing-the-openapi-specification-for-the-hl2-panorama-api/</guid>
+      <description>With the release of our new documentation web site, powered by Hugo, we&amp;rsquo;re also releasing the OpenAPI Specification for the hl2 Panorama API. As you already know, hl2 Panorama provides a REST API which can be used to integrate and administrate it easily. Every language has an HTTP client so you can script and integrate it as you want! As an example, the following JS script will log the authenticated account to the console:</description>
+    </item>
+    
+  </channel>
+</rss>

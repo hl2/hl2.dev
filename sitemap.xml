@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://developers.hl2.com/docs/hl2-panorama/getting-started/</loc>
+    <lastmod>2019-03-19T18:13:14+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/docs/hl2-panorama/</loc>
+    <lastmod>2019-03-19T18:13:14+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/docs/hl2-panorama/authentication/</loc>
+    <lastmod>2019-03-19T18:13:14+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/docs/hl2-panorama/rest-api/</loc>
+    <lastmod>2019-03-19T18:13:29+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/docs/</loc>
+    <lastmod>2019-03-19T18:13:14+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/blog/</loc>
+    <lastmod>2019-03-18T17:15:04+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/contact/</loc>
+    <lastmod>2019-03-18T17:15:04+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/legal-notices/</loc>
+    <lastmod>2019-03-18T17:15:04+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/docs/hl2-panorama/openapi-specification/</loc>
+    <lastmod>2019-03-18T17:15:04+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/blog/releasing-the-openapi-specification-for-the-hl2-panorama-api/</loc>
+    <lastmod>2019-03-18T17:15:04+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://developers.hl2.com/</loc>
+    <lastmod>2019-03-19T18:13:14+04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
