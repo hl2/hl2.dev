@@ -22,8 +22,6 @@ R.C.S. Poitiers 753 212 604
 
 ## Publication director
 
-Florent Agneray  
-+33 9 72 42 51 18  
 {{< param contactEmail >}}  
 
 ## Hosting
